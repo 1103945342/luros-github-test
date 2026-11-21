@@ -3,6 +3,7 @@
 import UIKit
 
 /// A tiny Hello World test screen.
+/// 增量构建验证：改这一行应当触发重新编译。
 final class RootViewController: UIViewController {
     private let counterLabel = UILabel()
     private var tapCount = 0
