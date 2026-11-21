@@ -1,0 +1,108 @@
+{
+  "environment": {
+    "sdk": {
+      "id": "iphoneos17.4-8618351c",
+      "digest": "sha256:8618351cbc242b134f8f6a7585d7d689e29ab148be51f5fe24eb07c26cd67983"
+    },
+    "toolchain": {
+      "digest": "sha256:39c74b059efeefe5fa5e731a90959a94749bf922e5827e74f0ee1e62270ea115",
+      "id": "5e4ad6d5b38a3e6979cd5996"
+    }
+  },
+  "package": {
+    "name": "Hello World",
+    "icon": "https://1103945342.github.io/Luros/icons/com.fluoxetine.luros.dev.app.png",
+    "description": "一个 Hello World 测试程序，用 Luros 在本机编译。",
+    "id": "local.luros.pineapple",
+    "section": "Applications",
+    "layout": [],
+    "version": "0.0.1",
+    "author": "Luros User",
+    "format": "ipa"
+  },
+  "schemaVersion": 1,
+  "language": "swift",
+  "products": [
+    {
+      "entitlements": "Packaging/App.entitlements",
+      "type": "app",
+      "name": "Pineapple",
+      "sources": [
+        "Sources/*.swift"
+      ],
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ],
+      "id": "app",
+      "infoPlist": "Resources/Info.plist",
+      "resources": []
+    }
+  ],
+  "displayName": "Hello World 测试程序",
+  "deploymentTarget": "16.0",
+  "template": {
+    "version": "0.1.1",
+    "templateID": "uikit-swift",
+    "digest": "sha256:3b04e2ccd2a93cdb82efc623d772c04b2e651c282906bbf20243be0199c090c1",
+    "extensionID": "com.fluoxetine.luros.dev.app"
+  },
+  "projectID": "96d513d2-d169-4c26-b971-f95edd51b815",
+  "build": {
+    "steps": [
+      {
+        "type": "compile",
+        "product": "app"
+      },
+      {
+        "type": "link",
+        "product": "app"
+      },
+      {
+        "type": "bundle-resources",
+        "product": "app"
+      },
+      {
+        "product": "app",
+        "type": "lipo"
+      },
+      {
+        "product": "app",
+        "type": "dsym"
+      },
+      {
+        "type": "strip",
+        "product": "app",
+        "style": "non-global"
+      },
+      {
+        "type": "sign",
+        "identity": "adhoc",
+        "product": "app"
+      }
+    ]
+  },
+  "kind": "app",
+  "architectures": {
+    "roothide": [
+      "arm64"
+    ],
+    "rootless": [
+      "arm64"
+    ]
+  },
+  "configurations": {
+    "Release": {
+      "debugInfo": true,
+      "optimization": "2"
+    },
+    "Debug": {
+      "optimization": "0",
+      "defines": {
+        "DEBUG": "1"
+      },
+      "debugInfo": true
+    }
+  },
+  "autoName": false
+}

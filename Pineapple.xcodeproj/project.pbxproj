@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		476BABFDF7FCE8749325C117 = {
+			isa = PBXBuildFile;
+			fileRef = 4C2881013066BE591C743E3C;
+		};
+		7FF30900CB6C7AF989B83B2C = {
+			isa = PBXBuildFile;
+			fileRef = E69BFEFD023742CE3D04A3D3;
+		};
+		9D2BC7A29F11E50440DD447D = {
+			isa = PBXBuildFile;
+			fileRef = A05C99C8D1A8A04969B8C95A;
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0105900DA19BC2086D270805 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = Pineapple.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1097CB47F6B9984A17614349 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		36929F470DC5A429C195E438 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.json;
+			path = "luros-project.json";
+			sourceTree = "<group>";
+		};
+		4C2881013066BE591C743E3C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = main.swift;
+			sourceTree = "<group>";
+		};
+		A05C99C8D1A8A04969B8C95A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = RootViewController.swift;
+			sourceTree = "<group>";
+		};
+		A298D94E76E2C91DC990EC66 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = App.entitlements;
+			sourceTree = "<group>";
+		};
+		E69BFEFD023742CE3D04A3D3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = AppDelegate.swift;
+			sourceTree = "<group>";
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB23D0D53F3DA1410428410E = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9EE7A2D23F068C9F9CACDF = {
+			isa = PBXGroup;
+			children = (
+				A298D94E76E2C91DC990EC66 /* App.entitlements */,
+			);
+			path = Packaging;
+			sourceTree = "<group>";
+		};
+		86BB69C17FB84BBD421BC82A = {
+			isa = PBXGroup;
+			children = (
+				0105900DA19BC2086D270805 /* Pineapple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE583677A9E5AFB51F83B4CE = {
+			isa = PBXGroup;
+			children = (
+				3D9EE7A2D23F068C9F9CACDF /* Packaging */,
+				D99C9C98BABB70622A8D9205 /* Resources */,
+				E4242705DF637781775E6E7A /* Sources */,
+				36929F470DC5A429C195E438 /* luros-project.json */,
+				86BB69C17FB84BBD421BC82A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D99C9C98BABB70622A8D9205 = {
+			isa = PBXGroup;
+			children = (
+				1097CB47F6B9984A17614349 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4242705DF637781775E6E7A = {
+			isa = PBXGroup;
+			children = (
+				E69BFEFD023742CE3D04A3D3 /* AppDelegate.swift */,
+				A05C99C8D1A8A04969B8C95A /* RootViewController.swift */,
+				4C2881013066BE591C743E3C /* main.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16F5B9B7BA763A6638F95B69 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C98AA28CCA740D760FE7C28;
+			buildPhases = (
+				C409CF896A45C8ACDA5F3D93,
+	FB23D0D53F3DA1410428410E,
+	0D85579C0B9AE8977699D66E,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pineapple;
+			productName = Pineapple;
+			productReference = 0105900DA19BC2086D270805;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BFE25CE06300B0B836EBED6 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+	LastUpgradeCheck = 1540;
+	TargetAttributes = {
+		16F5B9B7BA763A6638F95B69 = {
+			CreatedOnToolsVersion = 15.0;
+		};
+	};
+			};
+			buildConfigurationList = ABE6FD4702943C89C47D5B04;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE583677A9E5AFB51F83B4CE;
+			productRefGroup = 86BB69C17FB84BBD421BC82A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16F5B9B7BA763A6638F95B69,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D85579C0B9AE8977699D66E = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C409CF896A45C8ACDA5F3D93 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF30900CB6C7AF989B83B2C,
+				9D2BC7A29F11E50440DD447D,
+				476BABFDF7FCE8749325C117,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		190BAA9327947700C1B2E35F = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = ( arm64 );
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ( "LUROS_BUILD_ID=\"xcode\"", "LUROS_PACKAGE_ID=\"local.luros.pineapple\"", "LUROS_VERSION=\"0.0.1\"", "LUROS_BOOTSTRAP_ROOTHIDE=1", "LUROS_CONFIGURATION_RELEASE=1" );
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55DF9DE6AD4A90F44ACB63FB = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = Packaging/App.entitlements;
+				FRAMEWORK_SEARCH_PATHS = ( "$(inherited)" );
+				HEADER_SEARCH_PATHS = ( "$(inherited)" );
+				INFOPLIST_FILE = Resources/Info.plist;
+				LIBRARY_SEARCH_PATHS = ( "$(inherited)" );
+				OTHER_LDFLAGS = ( "$(inherited)", "-framework", Foundation, "-framework", UIKit );
+				PRODUCT_BUNDLE_IDENTIFIER = local.luros.pineapple;
+				PRODUCT_NAME = Pineapple;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		726F5CA7FB25473AFB613A03 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = Packaging/App.entitlements;
+				FRAMEWORK_SEARCH_PATHS = ( "$(inherited)" );
+				HEADER_SEARCH_PATHS = ( "$(inherited)" );
+				INFOPLIST_FILE = Resources/Info.plist;
+				LIBRARY_SEARCH_PATHS = ( "$(inherited)" );
+				OTHER_LDFLAGS = ( "$(inherited)", "-framework", Foundation, "-framework", UIKit );
+				PRODUCT_BUNDLE_IDENTIFIER = local.luros.pineapple;
+				PRODUCT_NAME = Pineapple;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+		EA529BDF408E935A2D0BA9F7 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = ( arm64 );
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ( "LUROS_BUILD_ID=\"xcode\"", "LUROS_PACKAGE_ID=\"local.luros.pineapple\"", "LUROS_VERSION=\"0.0.1\"", "LUROS_BOOTSTRAP_ROOTHIDE=1", "LUROS_CONFIGURATION_DEBUG=1", "DEBUG=1" );
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C98AA28CCA740D760FE7C28 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55DF9DE6AD4A90F44ACB63FB,
+				726F5CA7FB25473AFB613A03,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE6FD4702943C89C47D5B04 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA529BDF408E935A2D0BA9F7,
+				190BAA9327947700C1B2E35F,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BFE25CE06300B0B836EBED6;
+}
